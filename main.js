@@ -1,31 +1,12 @@
-const Inicio= document.getElementById('inicio');
-const Clientes= document.getElementById('clientes');
-const Creditos= document.getElementById('credito');
-const Title= document.querySelector('.title');
-const InicioContainer= document.querySelector('.container-Main');
-const ClientesContainer= document.querySelector('.container-Clientes');
-const CreditosContainer= document.querySelector('.container-Creditos');
+const express = require('express');
+const app = express();
 
+//settings
 
-Inicio.addEventListener('click', function(){
-    Title.innerHTML="Inicio";
-    InicioContainer.style.visibility="visible";
-    ClientesContainer.style.visibility="collapse";
-    CreditosContainer.style.visibility="collapse";
-});
+app.set('port', process.env.PORT ||3000);
 
-Clientes.addEventListener('click', function(){
-    Title.innerHTML = "Clientes";
-    InicioContainer.style.visibility="collapse";
-    ClientesContainer.style.visibility="visible";
-    CreditosContainer.style.visibility="collapse";
+    
+app.listen(app.get('port'), ()=>{
+    console.log('listening on');
+})
 
-});
-
-Creditos.addEventListener('click', function(){
-    Title.innerHTML = "Nuevo Cr&eacute;dito";
-    InicioContainer.style.visibility="collapse";
-    ClientesContainer.style.visibility="collapse";
-    CreditosContainer.style.visibility="visible";
-
-});

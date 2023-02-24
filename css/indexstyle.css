@@ -46,13 +46,14 @@ margin: 1rem;
     font-weight: 600;
 }
 .img-admin{
-    width: 10rem;
-    height: 10rem;
+    width: 5rem;
+    height: 5rem;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1024px-User_icon_2.svg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
+    margin-top: 4rem;
 }
 
 .inicio,.Clientes,.Credito{
@@ -167,15 +168,16 @@ a{
   font-size: 1.5rem;
 }
 .container-Creditos{
-    width: fit-content;
-    justify-content: center;
+    width: 80%;
     float: right;
-  margin-top: -10rem;
-  margin-right: 30%;
-  visibility: collapse;
-  background-color: white;
-  border-radius: 15px;
-  padding: .5rem;
+    margin-top: -11rem;
+    visibility: collapse;
+    /* background-color: white; */
+    border-radius: 15px;
+    padding: .5rem;
+    display: block;
+    justify-content: center;
+    /* background-color: #00abfb; */
 }
 thead{
     width: 70%;
@@ -184,4 +186,68 @@ thead{
 }
 tbody{
     background-color: white;
+}
+
+.Form{
+    background-color: white;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    column-gap: 2rem;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.75);
+    margin: auto;
+}
+.Form input,select{
+    width: 100%;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin-bottom: .5rem;
+}
+.cedula{
+    width: 90% !important;
+}
+.Form input[type="submit"]{
+    padding: 0;
+    width: fit-content;
+    grid-column: 1/3;
+    background-color: var(--titulo);
+    margin: auto;
+    color: #ffffff;
+    margin-top: 1.5rem;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+.Form input[type="submit"]:hover{
+    cursor: pointer;
+}
+.atras{
+    height: fit-content;
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+    background-color: var(--titulo);
+    color: #ffffff;
+    padding: .5rem;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+.atras:hover{
+    cursor: pointer;
+}
+.lupa{
+    width: 2rem;
+    background-color: var(--titulo);
+    padding: .1rem;
+    padding-top: .25rem;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 10px;
 }

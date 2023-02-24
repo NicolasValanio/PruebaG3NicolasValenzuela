@@ -92,19 +92,47 @@
         </div>
         <!-- Contenedor de Pagina Créditos -->
         <div class="container-Creditos">
-          <form action="">
-          <label for="">Pagaré No</label><br>
-          <input type="number" placeholder="Numero de Pagaré"><br>
-          <label for="">Cantidad del Crédito</label><br>
-          <input type="number" placeholder="cantidad"><br>
-          <label for="">Cuota Inicial</label><br>
-          <input type="number" placeholder="cuota"><br>
-          <label for="">Tasa de Interes</label><br>
-          <select name="" id="">
-            <option value="">1</option>
-            <option value="">2</option>
-          </select>
-          <br>
+          <button class="atras" type="button">Atras</button>
+          <form action="" class="Form">
+            <div>
+              <label for="">Pagaré No</label>
+              <input type="number" placeholder="Numero de Pagaré">
+              <label for="">Cantidad del Crédito</label>
+              <input type="number" placeholder="cantidad">
+              <label for="">Cuota Inicial</label>
+              <input type="number" placeholder="cuota">
+              <label for="">Tasa de Interes</label>
+              <select name="" id="">
+                <option value="">Seleccionar...</option>
+                <option value=""></option>
+              </select>
+              
+              <label for="">Fecha de desembolso</label>
+              <input type="date">
+            </div>
+            <div>
+              <label for="">Cuotas Mensuales</label>
+              <input type="number" placeholder="Cuotas">
+              <label for="">C&eacute;dula del cliente</label>
+             <div>
+               <input type="number" class="cedula" placeholder="Cedula"><a href="" class="lupa"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                 <circle cx="10" cy="10" r="7" />
+                 <line x1="21" y1="21" x2="15" y2="15" />
+               </svg></a>
+             </div>
+              <label for="">Cliente</label>
+              <select name="" id="">
+                <option value="">Seleccionar...</option>
+              </select>
+              <label for="">Fecha del Cr&eacute;dito</label>
+              <input type="date">
+              <label for="">Observaaciones</label>
+              <textarea name="" id="" cols="40" rows="5" placeholder="Observaciones"></textarea>
+            </div>
+
+          <input type="submit" value="Enviar">
+
         </form>
         </div>
 
@@ -163,6 +191,6 @@
 
 
     </main>
-    <script src="main.js"></script>
+    <script src="controler.js"></script>
 </body>
 </html>
